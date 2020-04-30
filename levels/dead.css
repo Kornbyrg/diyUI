@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.container {
+  width: 660px;
+  margin: 50px auto;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px; 
+  box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+a:nth-child(1) {background:rgb(3, 250, 56)}
+a:nth-child(2) {background:rgb(210, 253, 16)}
+a:nth-child(3) {background:rgb(252, 115, 4)}
+a:nth-child(4) {background:rgb(212, 48, 149)}
+a:nth-child(5) {background:rgb(250, 17, 8)}
+.alternate a {
+  -webkit-animation: shake .7s linear alternate infinite;
+  animation: shake .7s linear alternate infinite;
+}
+.alternate-reverse a {
+  -webkit-animation: shake 0.7s linear alternate-reverse infinite;
+  animation: shake 0.7s linear alternate-reverse infinite;
+}
+@-webkit-keyframes shake {
+  100% {
+    -webkit-transform: translateX(-30px);    
+  }
+}
+@keyframes shake {
+  100% {
+    transform: translateX(-30px);    
+  }
+}
+kbd{
+    color: white;
+    opacity: 20%;
+}
+
+#info{
+background: linear-gradient(90deg, rgba(255,1,1,0.5) 0%, rgba(255,156,5,0.5) 14%, rgba(255,252,0,0.5) 29%, rgba(23,251,6,0.5) 47%, rgba(4,0,255,0.5) 65%, rgba(141,0,255,0.5) 85%);
+}
+
+
+
+
+
+*{box-sizing:border-box}
+@keyframes loader {
+  0% {transform:rotate(180deg)}
+  50%{transform:rotate(180deg)}
+  100%{transform:rotate(180deg)}}
+@keyframes span-1 {
+  0% {transform:translate(200px);}
+  50%{transform:translate(0, 0)}
+  100%{transform:translate(4000px);}}
+.loader {
+  margin-top: 2%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  color: black;
+}
+.loader span {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  background-color: green;
+}
+.loader span:nth-child(1) {
+  animation: span-1 5s ease-in-out infinite;
+}
+
+#btn{
+  background-color: rgb(23, 217, 231);
+    border: 0;
+    color: black;
+}
+
+#help{
+  margin-left: -600px;
+}
+
+a{
+  text-decoration: none;
+  color: wheat;
+}
+
+p{
+  color: silver;
+}

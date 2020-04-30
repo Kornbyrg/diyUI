@@ -1,0 +1,30 @@
+
+body {
+  text-align: center;
+  color: white;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(https://alev.biz/wp-content/uploads/2017/12/washing_hands.jpg);
+  overflow: hidden;
+}
+h1{
+  background-color: black;
+}
+@keyframes loader {
+  0% {transform:rotate(0deg)}
+  50%{transform:rotate(180deg)}
+  100%{transform:rotate(360deg)}}
+.loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: loader 2s infinite ease-in-out;
+}
+.loader img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 2px solid rgb(255, 255, 255);
+}
